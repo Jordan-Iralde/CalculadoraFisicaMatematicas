@@ -21,19 +21,12 @@ def Calculo():
     #m2 = 3 * 10 ** 30          
 
     #Programa 4
-    def CalcularFuerza():
-        m1 = 5.972 * 10 ** 24
+def CalcularFuerza():
+        m1 = 5.972 * 10e24
         m2 = 0
-        r  = 10 ** 11
+        r  = 1 * 10e11
         F= G *(m1 * m2)/r**2
         return F
-
-    m1 = 5.972 * 10 ** 24
-    r = 1 * 10 ** 11
-    F= 3.984 * 10 ** -8
-    m2 = F * r **2/ G * m1
-    print(m2)
-    #print(f"{F}+N")
 
 def CalcularGravedad():
     #Gravedad = (G * Masa)/radio**2
@@ -52,6 +45,16 @@ def CalcularGravedad():
     print(f"{GravedadGM} / {radio ** 2} = {Gravedad}")
     
     #return print(f"Gravedad es {}")
+    m1 = 5.972 * 10e24
+    r = 1 * 10e11
+    F= 3.984 * 10e-8
+    m2 = F * r **2/ G * m1
+    print(m2)
+    #print(f"{F}+N")
+m1 = 5.972 * 10e24
+r = 1 * 10e11
+F= 3.984 * 10e-8
+m2 = F * r **2/ G * m1
 
-CalcularGravedad()
+#CalcularGravedad()
 print("Fin")
