@@ -20,14 +20,24 @@ def calcularMasa(Q, c, vt):
 
 def calcularTF():
     To = float(input("Ingrese valor de Temperatura inicial: "))
-    calculo = calcularVT()
+    
+    Q  = float(input("Valor Q: "))
+    m  = float(input("Valor m: "))
+    c  = float(input("Valor c: "))
+    
+    calculo = calcularVT(Q, m, c)
     Tf = To + calculo
     print(f"Temperatura final es {Tf}")
     return Tf
 
 def calcularTo():
     Tf = float(input("Ingrese valor de Temperatura final: "))
-    calculo = calcularVT()
+
+    Q  = float(input("Valor Q: "))
+    m  = float(input("Valor m: "))
+    c  = float(input("Valor c: "))
+
+    calculo = calcularVT(Q, m, c)
     To = Tf + calculo
     print(f"Temperatura inicial es {To}")
     return print(f"Temperatura incial es = {To}")
